@@ -169,7 +169,7 @@ Array.from(arrayLike[, mapFn[, thisArg]])
 ```javascript
 const str = 'Hello';
 const arr = Array.from(str);
-console.log(arr); // ['H', 'e', 'l', 'l', 'o']
+console.log(arr); // ['H', 'e', 'l', 'l', 'o'] .
 ```
 
 
