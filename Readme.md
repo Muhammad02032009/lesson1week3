@@ -129,7 +129,48 @@ console.log(sum(...numbers))
 function num(a,b,...arr)
 arr(c,d,e,f)
 ```
+_______________________
+### Every()
+>every — это метод массивов в JavaScript, который проверяет, удовлетворяют ли все элементы массива условию, заданному в передаваемой функции. Если все элементы соответствуют условию, метод возвращает true, иначе — false.
+array.every(callback(element[, index[, array]])[, thisArg])
+```javascript
+const numbers = [2, 4, 6, 8];
+const allEven = numbers.every((num) => num % 2 === 0);
+console.log(allEven); // true, потому что все элементы массива чётные
+```
+### some
+>Метод some проверяет, удовлетворяет ли хотя бы один элемент массива условию, заданному в передаваемой функции. Возвращает true или false.
+array.some(callback(element[, index[, array]])[, thisArg])
 
+```javascript
+const numbers = [1, 2, 3, 4, 5];
+const hasNegative = numbers.some((num) => num < 0);
+console.log(hasNegative); // false
+```
+### fill
+>Метод fill заполняет все элементы массива статическим значением, начиная с начального индекса и заканчивая конечным индексом.
+array.fill(value[, start[, end]])
+```javascript
+const arr = [1, 2, 3, 4, 5];
+arr.fill(0, 2, 4);
+console.log(arr); // [1, 2, 0, 0, 5]
+```
+### flat
+>Метод flat создает новый массив, в котором все элементы вложенных массивов были рекурсивно "подняты" на указанный уровень глубины.
+const newArray = array.flat([depth])
+```javascript
+const arr = [1, 2, [3, 4, [5, 6]]];
+const flattened = arr.flat(2);
+console.log(flattened); // [1, 2, 3, 4, 5, 6]
+```
+### from
+>Метод from создает новый массив из подобного массива или итерируемого объекта.
+Array.from(arrayLike[, mapFn[, thisArg]])
+```javascript
+const str = 'Hello';
+const arr = Array.from(str);
+console.log(arr); // ['H', 'e', 'l', 'l', 'o']
+```
 
 
 
