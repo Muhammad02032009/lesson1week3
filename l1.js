@@ -71,11 +71,29 @@
 // console.log(ar([1,2,3]));
 
 
-let arr=[1,2,3,4,5]
-let cnt=0
-arr.forEach (function(element){
-      cnt+=element
-})
-console.log(cnt)
+// let arr=[1,2,3,4,5]
+// let cnt=0
+// arr.forEach (function(element){
+//       cnt+=element
+// })
+// console.log(cnt)
+
+
+
+function minMax(arr) {
+	let arr1=[]
+	var min=+Infinity
+	var max=-Infinity
+	for (let i=0;i<=arr.length-1;i++)
+		{
+			if (arr[i]>max){max=arr[i]}
+			if (arr[i]<min){min=arr[i]}
+		}
+	arr1.push(min)
+	arr1.push(max)
+return arr1
+		
+}
+console.log(minMax([1,2,3,4,5]));
 
 

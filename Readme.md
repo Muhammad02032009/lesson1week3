@@ -109,3 +109,29 @@ console.log(filter1) // ["a","b","c"]
 
 
 
+## Mehcanisms
+1.`Destructuring`-->elementhoi masivro ba peremena mebakhshid
+```javascript
+let a,b
+[a,b]=[10,20]
+```
+2.`spread`-->elementhoi daruni masivro kopya mekard
+```javascript
+function sum(a,b,c)
+{
+      return a+b+c
+}
+let numbers=1,2,3
+console.log(sum(...numbers))
+```
+3.`rest`-->argumenthoi beokhirro qabul mekunad
+```javascript
+function num(a,b,...arr)
+arr(c,d,e,f)
+```
+
+
+
+
+
+
